@@ -1,23 +1,166 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre mim</title>
+        <title>Perguntas sobre você!</title>
+        <meta name="description" content="Perguntas sobre cada pessoa para serem respondidas">
         <link rel="stylesheet" href="style.css">
     </head>
-    <header>
-        <h1>Quem sou eu ?</h1><br>
-        <h4>Meu nome é Victor Diogo Santos de Araujo, tenho 14 anos e estou cursando o nono ano do ensino fundamental, moro em aracaju sergipe e gosto muito de programar, fiz esses sites para divulgar todo meu conhecimento sobre HTML e CSS</h4>
-    </header>
     <body>
-        <p>Tenho conhecimento sobre python, html, css e gml</p><br>
-        <p>Desejo fazer ciência da computação na UFS</p>
+        <header>
+            <h1>Me conte sobre você!</h1><br>
+            <p>Fiz esse site para saber mais sobre as pessoas que irão responder, e para mostrar meus conhecimentos em <strong><abbr title="HyperText Markup Language">HTML</abbr></strong> e <strong><abbr title="Cascading Style Sheets">CSS</abbr></strong>.</p>
+        </header>
+        <main>
+            <!--nome da pessoa-->
+            <section>
+                <h2>Qual o seu nome?</h2>
+                <form>
+                    <input type="text" id="p1" name="pergunta1" placeholder="Digite sua resposta:">
+                </form>
+            </section>
+            <!--idade da pessoa-->
+            <section>
+                <h2>Quando você nasceu?</h2>
+                <form>
+                    <input type="date" id="p2" name="pergunta2">
+                </form>
+            </section>
+            <!--onde ela nasceu-->
+            <section>
+                <h2>Escolha o estado em que você nasceu.</h2>
+                <form>
+                    <select name="pergunta3" id="p3" >
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Espirito Santo">Espirito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+                        <option value="Distrito Federal">Distrito Federal</option>
+                    </select>
+                </form>
+            </section>
+        <!--colocando email e senha-->
+        <section>
+            <h2>Digite seu email e crie uma senha forte</h2>
+            <form>
+                <p>Email: <input type="email" id="p4e" name="pergunta4" placeholder="Digite aqui seu email:"></p>
+                <p>Senha: <input type="password" id="p4s" name="pergunta4" placeholder="Digite uma senha forte:"></p>
+            </form>
+        </section>
+        <!--seleçao multipla-->
+        <section>
+            <h2>Quais são as suas áreas favoritas.</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="Exatas">
+                <label for="p5a">Exatas</label><br><br>
+                <input type="checkbox" id="p5b" name="pergunta5" value="Humanas">
+                <label for="p5b">Humanas</label><br><br>
+                <input type="checkbox" id="p5c" name="pergunta5" value="Linguagens">
+                <label for="p5c">Linguagens</label><br><br>
+                <input type="checkbox" id="p5d" name="pergunta5" value="Artes">
+                <label for="p5d">Artes</label><br><br>
+            </form>
+        </section>
+        <!--uma resposta so -->
+        <section>
+            <h2>Qual seu nivel de ensino atual?</h2>
+            <form>
+                <input type="radio" id="p6a" name="pergunta6">
+                <label for="p6a">Educação básica incompleta</label><br><br>
+                <input type="radio" id="p6b" name="pergunta6">
+                <label for="p6b">Educação básica completa</label><br><br>
+                <input type="radio" id="p6c" name="pergunta6">
+                <label for="p6c">Ensino fundamental incompleto</label><br><br>
+                <input type="radio" id="p6d" name="pergunta6">
+                <label for="p6d">Ensino fundamental completo</label><br><br>
+                <input type="radio" id="p6e" name="pergunta6">
+                <label for="p6e">Ensino médio incompleto</label><br><br>
+                <input type="radio" id="p6f" name="pergunta6">
+                <label for="p6f">Ensino médio completo</label><br><br>
+                <input type="radio" id="p6g" name="pergunta6">
+                <label for="p6g">Ensino superior incompleto</label><br><br>
+                <input type="radio" id="p6h" name="pergunta6">
+                <label for="p6h">Ensino superior completo</label><br><br>
+            </form>
+        </section>
+        <!--pergunta com imagem-->
+        <section>
+            <h2>Coloque aqui uma imagem sua ou de algo que você goste</h2>
+            <form>
+                <input type="file" id="p7" name="pergunta7">
+            </form>
+        </section>
+        <!--tabela dos meus conhecimentos em programação-->
+        <section>
+            <h2>Tabela dos meus conhecimentos sobre programação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>linguagem</th>
+                        <th>nivel de aprendizado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediario</td>
+                    </tr>
+                    <tr>
+                        <td><abbr title="HyperText Markup Language">HTML</abbr></td>
+                        <td>Iniciante - Intermediario</td>
+                    </tr>
+                    <tr>
+                        <td><abbr title="Cascading Style Sheets">CSS</abbr></td>
+                        <td>Iniciante</td>
+                    </tr>
+                    <tr>
+                        <td><abbr title="Game Maker Language">GML</abbr></td>
+                        <td>Intermediario</td>
+                    </tr>
+                </tbody>
 
-
-        <figure>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjNHldb4AHbd56uv6cMY_DSLRC1GWbA87KPw&s" alt="Logotipo de uma linguagem de programação"><br>
-            <figcaption>Figura 1: obrigado por  ter visto meu site :)</figcaption>
-        </figure>
+            </table>
+        </section>
+        <!--formulario de feedback-->
+        <section>
+            <h2>Me ajude a melhorar dando seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui:"><br><br>
+                    <label for="comentarios">Comentários</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus comentarios aqui:"></textarea><br>
+                    <button onclick="alert('feedback enviado')">Envie o feedback</button>
+                </fieldset>
+            </form>
+        </section>
+        </main>
+        <footer> 
+            <p class="paragrafo-footer">&copy perguntas sobre você. Todos os direitos reservados</p>
+            <p class="paragrafo-footer"><p class="paragrafo-footer">Para conhecer mais sobre mim <a href="https://sobre-mim-victor.netlify.app" target="_blanck">clique aqui</a></p></p>
+        </footer>
     </body>
 </html>
